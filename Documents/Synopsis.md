@@ -1,0 +1,1 @@
+Current goal is to input postal codes and receive political information from an API.
