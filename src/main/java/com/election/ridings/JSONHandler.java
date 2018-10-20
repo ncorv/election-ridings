@@ -11,7 +11,6 @@ public class JSONHandler {
 
     public static JsonObject GETZipcode(String zip) throws IOException{
          return new JsonParser().parse(JSONRequest(new URL("https://represent.opennorth.ca/postcodes/"+zip+"/"))).getAsJsonObject();
-
     }
 
     public static String JSONRequest(URL url) throws IOException{
