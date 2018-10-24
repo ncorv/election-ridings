@@ -1,18 +1,24 @@
 package com.election.ridings;
-import java.io.IOException;
-import java.util.Scanner;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+public class Main extends Application{
+
     public static void main(String[] args) {
-	// write your code here
-        JSONHandler jh = new JSONHandler();
-        try {
-            System.out.println("Enter Zip Code: ");
-            Scanner scanner = new Scanner(System. in); String input = scanner.nextLine();
-            CsvOutput.WriteFile(input.toUpperCase());
-            System.out.println("Done");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("fxml/Main.fxml"));
+        Scene scene = new Scene(root);
+
+        stage.setTitle("Election Ridings");
+        stage.setScene(scene);
+        //stage.setResizable(false);
+        stage.show();
     }
 }
