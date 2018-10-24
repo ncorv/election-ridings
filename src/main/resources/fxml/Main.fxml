@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="com.election.ridings.Controllers.MainGuiController" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="openButton" layoutX="102.0" layoutY="113.0" mnemonicParsing="false" text="Open" />
+      <Button fx:id="csv" layoutX="99.0" layoutY="75.0" mnemonicParsing="false" text="csv" />
+   </children>
+</Pane>
